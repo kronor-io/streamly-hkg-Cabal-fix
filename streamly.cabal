@@ -504,7 +504,7 @@ library
                     -- packages depending on the "ghc" package (packages
                     -- depending on doctest is a common example) can
                     -- depend on streamly.
-                       base              >= 4.12  && < 4.20
+                       base              >= 4.12  && < 4.21
                      , containers        >= 0.6.0 && < 0.8
                      , deepseq           >= 1.4.4 && < 1.6
                      , exceptions        >= 0.8.0 && < 0.11
@@ -523,10 +523,10 @@ library
                      , atomic-primops    >= 0.8   && < 0.9
                      , lockfree-queue    >= 0.2.4 && < 0.3
 
-                     , unicode-data      >= 0.1 && < 0.5
+                     , unicode-data      >= 0.1 && < 0.7
 
                     -- Network
-                     , network           >= 2.6   && < 3.2
+                     , network           >= 2.6   && < 3.3
 
     if impl(ghc < 9.6)
       build-depends:   transformers-base >= 0.4   && < 0.5
